@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+}
+
+.logoHogar{
+    padding: 0px 0 0 10px;
+    height: 80px;
+}
+
+html {
+    min-height: 100%;
+    background-color: orangered;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+label {
+    font-weight: 700;
+    color: #262525;
+    padding: 15px;
+}
+
+.barra-navegacion{
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+a{
+    color: #fff;
+    font-weight: 600;
+}
+
+a:hover{
+    color : rgb(100, 100, 198);
+}
+
+.inicio{
+    padding: 15px;
+}
+
+.div-father{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-cotizador {
+    width: 1200px;
+    background-color: gray;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
+}
+
+select, input, option {
+    min-width: 50% !important;
+    width: 70% !important;
+    border-color: orangered !important;
+}
+
+.separador {
+    margin: 20px;
+}
+
+.importe {
+    color: orangered;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.button-outline{
+    color: orangered !important;
+    border-color: orangered !important;
+}
+
+.guardar {
+    border: 1px transparent;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+button:hover {
+    color: whitesmoke !important;
+    background-color: orangered !important;
+}
+
+.carrito-logo{
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+  
+.redes a {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.banner{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.icon-banner{
+    height: 120px;
+}
+
+.slogan{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.contenedor-div-padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 200px);
+    padding: 30px;
+    grid-gap: 40px;
+}
+
+.contenedor-div-hijo1{
+    height: 200px;
+    background-image: url(../img/prestamo1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor-div-hijo2{
+    height: 200px;
+    background-image: url(../img/seguros.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor-div-hijo1-A{
+    height: 200px;
+    background-image: url(../img/vivienda.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor-div-hijo2-B{
+    height: 200px;
+    background-image: url(../img/automovil.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.prestamosYseguros{
+    text-align: center;
+    padding: 20px;
+}
+
+.prestamosYseguros:hover{
+    color: rgb(100, 100, 198);
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+    .contenedor-div-padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 400px);
+        padding: 30px;
+        grid-gap: 40px;
+    }
+
+    .prestamosYseguros{
+        font-size: x-large;
+    }
+    
+  }
+
+@media only screen and (min-width: 1025px) and (max-width: 2820px) {
+    
+    .barra-navegacion{
+        font-size: x-large;
+    }
+
+    .contenedor-div-padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1, 600px);
+        padding: 30px;
+        grid-gap: 40px;
+    }
+
+    .contenedor-div-hijo1{
+        height: 600px;
+    }
+
+    .contenedor-div-hijo2{
+        height: 600px;
+    }
+
+    .contenedor-div-hijo1-A{
+        height: 600px;
+    }
+
+    .contenedor-div-hijo2-B{
+        height: 600px;
+    }
+
+    .prestamosYseguros{
+        font-size: x-large;
+    }
+
+    footer {
+        text-align: center;
+        color: #fff;
+        padding-top: 90px;
+    }
+  }
