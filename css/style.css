@@ -72,7 +72,7 @@ a:hover{
 
 .div-cotizador {
     width: 1200px;
-    background-color: gray;
+    background-color: whitesmoke;
     margin-left: 5%;
     margin-right: 5%;
     padding: 30px;
@@ -221,50 +221,32 @@ footer {
 }
 
 label {
-    margin-top: 10px;
-}
-
-.label-monto {
-    font-weight: 700;
-    font-size: larger;
-}
-
-.label-destino {
-    font-weight: 500;
-    font-size: larger;
-}
-
-.label-intereses {
-    font-weight: 700;
-    font-size: larger;
-}
-
-.label-plazo {
-    font-weight: 700;
-    font-size: larger;
-}
-
-.label-cuota {
-    font-weight: 700;
-    font-size: larger;
-}
-
-.label-total {
-    font-size: x-large;
-    font-weight: 700;
-    font-size: larger;
-    color: darkred;
-}
-
-.total {
-    font-weight: 700;
-    padding: 16px;
-    background-color: rgba(173, 216, 230, 0.46) !important;
-    border-end-end-radius: 20px;
+    margin-top: 0px;
+    padding: 0;
 }
 
 .centrar-elementos {
     text-align: center;
+    padding-top: 80px;
+}
+
+.alert-div {
+    opacity: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 450px;
+    height: 70px;
+    transition: opacity 0.75s ease-in-out;
 }
 
 .texto-verde {
@@ -293,10 +275,9 @@ label {
 }
 
 button{
-    font-size: large;
+    font-size: x-large;
     margin-top: 20px;
     padding: 20px;
-    font-size: larger;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;

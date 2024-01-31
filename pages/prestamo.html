@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>PRESTAMOS</title>
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/casa.png" type="image/png">
+    <link rel="shortcut icon" href="../img/prestamo.png" type="image/png">
     <script src="../js/class.cotizador.js"></script>
     <script src="../js/variables.js"></script>
     <script defer src="../js/aplicacion.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="barra-navegacion">
@@ -18,40 +20,42 @@
             <a href="../pages/seguro.html" role="button" class="seguros">SEGUROS</a>
             <a href="#" role="button" class="about">CONTACTO</a>
         </nav>
-        <p class="logos" >
+        <p class="logos">
             <img class="logoPrestamo" src="../img/prestamo.png" alt="Foto prestamo"></h1>
         </p>
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <label for="propiedad">Tipo de vehiculo</label>
-            <select id="propiedad">
-                <option selected disabled>Seleccionar...</option>
-            </select>
-            <label for="ubicacion">Marca</label>
-            <select id="ubicacion">
-                <option selected disabled>Seleccionar...</option>
-            </select>
-            <label for="ubicacion">Modelo</label>
-            <select id="ubicacion">
-                <option selected disabled>Seleccionar...</option>
-            </select>
-            <label for="ubicacion">Año</label>
-            <select id="ubicacion">
-                <option selected disabled>Seleccionar...</option>
+            <label class="prest" for="email">Ingrese su e-mail:</label>
+            <input type="email" id="email" required="true">
+
+            <label class="prest" for="metros2">Monto de dinero a solicitar:</label>
+            <input type="number" id="montoPrestamo" placeholder="Ingresa el monto" required value="50.000" min="50000"
+                max="50000000" step="50000">
+
+            <label class="prest" for="metros2">¿En cuántas cuotas devolverás el préstamo?</label>
+            <input type="number" id="plazoPago" placeholder="Ingresa el plazo en meses" value="12" min="12" max="60"
+                step="12" required>
+
+            <label class="prest" for="tasaInteres">¿Qué tipo de crédito necesitas?</label>
+            <select id="selectDestino">
+                <option disabled selected>Elige aquí...</option>
             </select>
             <div class="center separador">
-                <button class="button button-outline">Cotizar</button>
+                <button class="button button-outline">CALCULAR</button>
             </div>
-            <div class="center separador">
-                <p class="importe">Cuota estimada: $
-                    <span id="valorPoliza">0.00</span>
-                    <span class="guardar" title="Guardar en historial">
-                        <img class="carrito-logo" src="../img/carrito.png" alt="Icono carrito">
-                    </span>
-                </p>
-            </div>
+            <!-- <div class="center separador">
+                    <p class="importe">Cuota estimada: $
+                        <span id="valorPoliza">0.00</span>
+                        <span class="guardar" title="Guardar en historial">
+                            <img class="carrito-logo" src="../img/carrito.png" alt="Icono carrito">
+                        </span>
+                    </p>
+                </div> -->
         </div>
+    </div>
+    <div id="panelMensaje" class="centrar-elementos alert-div ">
+        <p>Por Favor! Ingrese datos válidos</p>
     </div>
     <footer>
         <div class="redes">
@@ -64,4 +68,5 @@
         </div>
     </footer>
 </body>
+
 </html>
