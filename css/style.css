@@ -40,10 +40,9 @@ h1 {
     color: whitesmoke;
 }
 
-label {
+label, .textos {
     font-weight: 700;
     color: #262525;
-    padding: 15px;
 }
 
 .barra-navegacion{
