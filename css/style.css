@@ -6,10 +6,25 @@
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
 }
 
+.logos{
+    text-align: center;
+    padding: 30px;
+}
+
 .logoHogar{
     padding: 0px 0 0 10px;
-    height: 80px;
+    height: 180px;
 }
+
+.logoPrestamo{
+    padding: 15px 0 0 0;
+    height: 180px;
+}
+
+.logoAutos{
+    height: 180px;
+}
+
 
 html {
     min-height: 100%;
@@ -128,7 +143,7 @@ footer {
 }
 
 .icon-banner{
-    height: 120px;
+    height: 180px;
 }
 
 .slogan{
@@ -150,6 +165,9 @@ footer {
     background-image: url(../img/prestamo1.jpg);
     background-position: center;
     background-size: cover;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
 }
 
 .contenedor-div-hijo2{
@@ -157,6 +175,9 @@ footer {
     background-image: url(../img/seguros.jpg);
     background-position: center;
     background-size: cover;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
 }
 
 .contenedor-div-hijo1-A{
@@ -164,6 +185,9 @@ footer {
     background-image: url(../img/vivienda.jpg);
     background-position: center;
     background-size: cover;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
 }
 
 .contenedor-div-hijo2-B{
@@ -171,6 +195,9 @@ footer {
     background-image: url(../img/automovil.jpg);
     background-position: center;
     background-size: cover;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-radius: 0.7rem;
 }
 
 .prestamosYseguros{
@@ -181,6 +208,110 @@ footer {
 .prestamosYseguros:hover{
     color: rgb(100, 100, 198);
 }
+
+/* /* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.panel-desgloce {
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.5);
+    box-shadow: 4px 2px 20px lightgray;
+    max-width: 480px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.label-monto {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.label-destino {
+    font-weight: 500;
+    font-size: larger;
+}
+
+.label-intereses {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.label-plazo {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.label-cuota {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.label-total {
+    font-size: x-large;
+    font-weight: 700;
+    font-size: larger;
+    color: darkred;
+}
+
+.total {
+    font-weight: 700;
+    padding: 16px;
+    background-color: rgba(173, 216, 230, 0.46) !important;
+    border-end-end-radius: 20px;
+}
+
+.centrar-elementos {
+    text-align: center;
+}
+
+.texto-verde {
+    font-size: medium;
+    font-style: italic;
+    font-weight: 500;
+    white-space: unset;
+    text-wrap: balance;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: rgba(144, 238, 144, 0.383);
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 4px 2px 20px lightgray;
+    color: green;
+}
+
+.panel-cotizacion {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+button{
+    font-size: large;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 770px) and (max-width: 1025px) {
     .contenedor-div-padre{
