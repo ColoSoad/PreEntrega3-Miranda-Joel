@@ -7,8 +7,8 @@ const btnCalcular = document.querySelector("button.btnCalcular")
 
 // VARIABLES GLOBALES, ARRAYS Y ARRAYS DE OBJETOS LITERALES
 
-const tiposDeCreditos = [{id: 1, tipoDelCredito: 'Credito Personal', interes: 1.6},
-                       {id: 2, tipoDelCredito: 'Credito Prendario', interes: 2.5},]
+const tiposDeCreditos = [{id: 1, tipoDelCredito: 'Credito Personal', interes: 1.45},
+                       {id: 2, tipoDelCredito: 'Credito Prendario', interes: 1.95},]
 
 
 // FUNCIONES 'CARGAR TIPO DE INTERES'

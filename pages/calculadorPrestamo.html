@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Archivo local css Finaliza -->
     <title>DETALLE - PRESTAMO</title>
+    <!-- SweetAlert2 Incia -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 Finaliza -->
     <!-- Archivos locales js Inicia -->
-    <script src="../js/class.cotizador.js"></script>
-    <script src="../js/variables.js"></script>
-    <script defer src="../js/index.js"></script>
+    <script src="../js/classPrestamo.js"></script>
+    <script defer src="../js/calculadorPrestamo.js"></script>
     <!-- Archivos locales js Finaliza -->
 </head>
 <body>
@@ -56,26 +59,22 @@
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <p class="textos" >Monto del crédito: <span class="label-monto">$ 50.000</span></p>
-            <p class="textos">Tasa de interés: <span class="label-intereses">60 </span><strong>%</strong></p>
-            <p class="textos">Cant. Coutas: <span class="label-plazo">12</span> <strong>meses</strong></p>
-            <p class="textos">Total a devolver: <span class="label-total">$ 80.000</span></p>
-            <p class="total textos">Valor cuota mensual: <span class="label-cuota">$ 6.666,67</span></p>
-            <div class="center separador">
-                <button class="button button-outline">CONTRATAR</button>
+            <p class="textos" >Monto del crédito: <span class="label-montoCredito">------</span></p>
+            <p class="textos">Tasa de interés: <span class="label-tasaDeIntereses">--- </span> %</p>
+            <p class="textos">Cant. Cuotas: <span class="label-coutas">--</span> meses</p>
+            <p class="textos">Total a devolver: $ <span class="label-total">--------</span></p>
+            <p class="total textos">Valor cuota mensual: $ <span class="label-cuota">$ -------</span></p>
+            <!--  -->
+            <div class="btnCalcularYCotizar separador">
+                <button class="button-contratar button button-outline">CONTRATAR</button>
             </div>
         </div>
-    </div>
-    <div id="panelMensaje" class="centrar-elementos alert-div ">
-        <p>Por Favor! Ingrese datos válidos</p>
     </div>
     <footer>
         <div class="redes">
             <!-- Iconos redes sociales inicia -->
             <p class="proy3">© 2024 TRUST-CREDITS</p>
             <p class="proy4">Todos los derechos reservados.</p>
-            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <!-- Iconos redes sociales fin -->
         </div>
     </footer>

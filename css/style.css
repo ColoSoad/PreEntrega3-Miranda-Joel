@@ -278,6 +278,24 @@ label {
     transition: opacity 0.75s ease-in-out;
 }
 
+.notification-div {
+    opacity: 0;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    background-color: rgba(144, 238, 144, 0.699);
+    box-shadow: 6px 4px 40px lightgray;
+    border-radius: 6px;
+    margin: 0 auto;
+    max-width: 480px;
+    transition: opacity 0.75s ease-in-out;
+}
+
+.transition-div-show {
+    opacity: 1;
+}
+
 .texto-verde {
     font-size: medium;
     font-style: italic;
