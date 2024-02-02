@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Archivo local css Finaliza -->
     <title>DETALLE - SEGURO</title>
+    <!-- SweetAlert2 Incia -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 Finaliza -->
     <!-- Archivos locales js Incia -->
-    <script src="../js/class.cotizador.js"></script>
-    <script src="../js/variables.js"></script>
-    <script defer src="../js/aplicacion.js"></script>
+    <script src="../js/classSeguroInmueble.js"></script>
+    <script defer src="../js/cotizadorHogar.js"></script>
     <!-- Archivos locales js Finaliza -->
 </head>
 <body>
@@ -56,19 +59,14 @@
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <p class="textos" >Monto solicitado: <span class="label-monto">$ 1.234.567,00</span></p>
-            <p class="textos">Destino del préstamo: <span class="label-destino">DESTINO ELEGIDO</span></p>
-            <p class="textos">Tasa de interés aplicable: <span class="label-intereses">45,81 </span><strong>%</strong></p>
-            <p class="textos">Plazo de devolución: <span class="label-plazo">88</span> <strong>meses</strong></p>
-            <p class="textos">Cuota mensual: <span class="label-cuota">$ 123.456</span></p>
-            <p class="total textos">Total a devolver: <span class="label-total">$ 2.145.588,99</span></p>
-            <div class="center separador">
-                <button class="button button-outline">CONTRATAR</button>
+            <p class="textos" >Tipo de vivienda: <span class="label-tipo">-----------</span></p>
+            <p class="textos">Ubicación geográfica: <span class="label-ubicacion">-------</span></p>
+            <p class="textos">Superficie de la vivienda: <span class="label-superficie">----</span><strong> m2</strong></p>
+            <p class="textos">Cuota mensual: <span class="label-cuota">------</span></p>
+            <div class="btnCalcularYCotizar separador">
+                <button class="button-contratar button button-outline">CONTRATAR</button>
             </div>
         </div>
-    </div>
-    <div id="panelMensaje" class="centrar-elementos alert-div ">
-        <p>Por Favor! Ingrese datos válidos</p>
     </div>
     <footer>
         <div class="redes">

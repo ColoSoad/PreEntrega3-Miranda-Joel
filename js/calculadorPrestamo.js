@@ -32,7 +32,7 @@ btnContratar.addEventListener("click", ()=> {
         text: `Se enviará un email a ${email} para finalizar la operación`,
         icon: "success"
     });
-    // location.href = "../index.html"
+    localStorage.removeItem("informacionDelPrestamo")
 })
 
 recuperarInfoDeLocalStorage()

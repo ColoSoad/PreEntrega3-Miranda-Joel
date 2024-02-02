@@ -1,25 +1,13 @@
 class SeguroInmueble {
-    constructor(tipoInmueble, valor, mts2) {
+    constructor(email, tipoInmueble, ubicacion, mts2, costoM2) {
+        this.email = email
         this.tipoInmueble = tipoInmueble || 1
-        this.valor = valor || 1
+        this.ubicacion = ubicacion || 1
         this.mts2 = mts2 || 1
+        this.costoM2 = costoM2 || 1
     }
     
     obtenerCotizacionInmueble() {
-        return this.tipoInmueble.factor * this.valor * this.mts2
+        return parseFloat((this.tipoInmueble * this.ubicacion * this.mts2 * this.costoM2).toFixed(2)).toLocaleString("es-AR")
     }
 }
-
-
-
-// class Cotizador {
-//     constructor(m2, factorPropiedad, factorUbicacion, costoM2) {
-//         this.m2 = parseInt(m2) || 1
-//         this.factorPr = parseFloat(factorPropiedad) || 1
-//         this.factorUb = parseFloat(factorUbicacion) || 1
-//         this.costoM2 = parseFloat(costoM2) || 1
-//     }
-//     cotizar() {
-//         return (this.m2 * this.factorPr * this.factorUb * this.costoM2).toFixed(2)
-//     }
-// } 
