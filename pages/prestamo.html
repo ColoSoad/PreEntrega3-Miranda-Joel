@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Archivo local css Finaliza -->
     <title>PRESTAMOS</title>
+    <!-- SweetAlert2 Incia -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 Finaliza -->
     <!-- Archivos lovales js local Incia -->
     <script src="../js/classPrestamo.js"></script>
     <script defer src="../js/prestamo.js"></script>
@@ -56,7 +60,7 @@
     <div class="div-father">
         <div class="div-cotizador">
             <label class="prest" for="email">Ingrese su e-mail:</label>
-            <input type="email" id="email" required="true">
+            <input type="email" id="email" required>
 
             <label class="prest" for="montoASolicitar">Monto de dinero a solicitar:</label>
             <input type="number" id="montoASolicitar" placeholder="Ingresa el monto" required value="50000" min="50000"

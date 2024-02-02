@@ -5,7 +5,7 @@ const spanCuotas = document.querySelector("span.label-coutas")
 const spanCuota = document.querySelector("span.label-cuota")
 const spanTotalDevolver = document.querySelector("span.label-total")
 const btnContratar = document.querySelector("button.button-contratar")
-
+let email = ""
 
 // FUNCION PARA RECUPERAR DATOS DE LS
 // MEDIANTE UN OBJETO LITERAL LLAMADO 'infoDelPrestamo' RECUPERAMOS LOS DATOS ALMACENADOS EN EL NAVEGADOR
@@ -18,6 +18,7 @@ function recuperarInfoDeLocalStorage() {
         spanCuotas.textContent = infoDelPrestamo.cantidadDeCuota
         spanCuota.textContent = parseFloat(infoDelPrestamo.cuota.toFixed(2)).toLocaleString("es-AR")
         spanTotalDevolver.textContent = (infoDelPrestamo.cuota * infoDelPrestamo.cantidadDeCuota).toLocaleString("es-AR")
+        email = infoDelPrestamo.email
     }
     else {
         location.href = "./prestamo.html"
@@ -28,10 +29,10 @@ function recuperarInfoDeLocalStorage() {
 btnContratar.addEventListener("click", ()=> {
     Swal.fire({
         title: "FELICITACIONES!",
-        text: "Un asesor de créditos lo contactará para finalizar la operación",
+        text: `Se enviará un email a ${email} para finalizar la operación`,
         icon: "success"
     });
-    localStorage.removeItem("informacionDelPrestamo");
+    // location.href = "../index.html"
 })
 
 recuperarInfoDeLocalStorage()

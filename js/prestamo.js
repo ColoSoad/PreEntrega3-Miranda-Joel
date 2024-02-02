@@ -59,20 +59,41 @@ function calcularPrestamo() {
     let cantidadDeCuota = parseInt(inputCantidadDeCuota.value)
     let tipoDeInteres = devolverIntereses(selectTipoDeInteres.value)
     const creditoSolicitado = new Credito(email, cantidadDeCuota, tipoDeInteres, montoASolicitar)
-    let cuota = creditoSolicitado.calcularCuotaMensual()
+    let cuota = creditoSolicitado.calcularCuotaMensual() 
     guardarInfoDePrestamoEnLocalStorage(email, montoASolicitar, cantidadDeCuota, tipoDeInteres, cuota)
     location.href = "calculadorPrestamo.html"
 }
 
 // EVENTOS
+btnCalcular.addEventListener("click", ()=> {
+    let resultado = selectTipoDeInteres.value;
+    let resultado2 = inputEmail.value;
+    if (resultado !== 'Elige aquí...' && resultado2 !== "") {
+        calcularPrestamo()
+    }
+    else {
+        Swal.fire({
+            title: "¡ERROR!",
+            text: "Por Favor! Ingrese datos válidos",
+            icon: "error"
+        });
+    }
 
-btnCalcular.addEventListener("click", ()=> calcularPrestamo())
+})
 
 // CODIGO AUTOEJECUTABLE
 
 cargartipoDeInteres()
 
+// btnCotizar.addEventListener("click", ()=> {
+//     let resultado = cotizarPropiedad()
 
+//     if (resultado !== 'Error') {
+//         valorPoliza.textContent = resultado
+//     } else {
+//         alert("⛔️ Faltan datos por cargar o seleccionar.")
+//     }
+// })
 
 
 
