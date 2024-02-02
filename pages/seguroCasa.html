@@ -13,9 +13,8 @@
     <!-- Archivo local css Finaliza -->
     <title>SEGUROS HOGAR</title>
     <!-- Archivos lovales js local Incia -->
-    <script src="../js/class.cotizador.js"></script>
-    <script src="../js/variables.js"></script>
-    <script defer src="../js/aplicacion.js"></script>
+    <script src="../js/classSeguroInmueble.js"></script>
+    <script defer src="../js/seguroHogar.js"></script>
     <!-- Archivos lovales js local Incia -->
 </head>
 <body>
@@ -56,28 +55,20 @@
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <label for="propiedad">Tipo de propiedad</label>
-    
-            <select id="propiedad">
+            <label class="prest" for="email">Ingrese su e-mail:</label>
+            <input type="email" id="email" required>
+            <label for="tipoDeInmueble">Tipo de propiedad</label>
+            <select id="tipoDeInmueble">
                 <option selected disabled>Seleccionar...</option>
             </select>
-    
             <label for="ubicacion">Ubicación</label>
             <select id="ubicacion">
                 <option selected disabled>Seleccionar...</option>
             </select>
             <label for="metros2">M2</label>
             <input type="number" id="metros2" value="20" min="20" max="500" step="5">
-            <div class="center separador">
-                <button class="button button-outline">Cotizar</button>
-            </div>
-            <div class="center separador">
-                <p class="importe">Cuota estimada: $
-                    <span id="valorPoliza">0.00</span>
-                    <span class="guardar" title="Guardar en historial">
-                        <img class="carrito-logo" src="../img/carrito.png" alt="Icono carrito">
-                    </span>
-                </p>
+            <div class="btnCalcularYCotizar center separador">
+                <button class="btnCotizar button button-outline">COTIZAR</button>
             </div>
         </div>
     </div>

@@ -259,7 +259,7 @@ label {
     padding-top: 80px;
 }
 
-.alert-div {
+/* .alert-div {
     opacity: 0;
     color: #fff;
     font-size: 20px;
@@ -311,7 +311,7 @@ label {
     border-radius: 10px;
     box-shadow: 4px 2px 20px lightgray;
     color: green;
-}
+} */
 
 .panel-cotizacion {
     padding: 20px;
