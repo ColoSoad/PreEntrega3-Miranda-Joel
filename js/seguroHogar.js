@@ -4,6 +4,7 @@ const selectTipoDeInmueble = document.querySelector("select#tipoDeInmueble")
 const selectUbicacion = document.querySelector("select#ubicacion")
 const inputMts2 = document.querySelector("input#Mts2")
 const btnCotizar = document.querySelector("button.btnCotizar")
+const btnInicio = document.querySelector("a#inicio")
 
 // VARIABLES GLOBALES, ARRAYS Y ARRAYS DE OBJETOS LITERALES 
 const inmueblesTipo = [{ codigo: 1, tipo: 'Hogar', factor: 1.12,},
@@ -77,7 +78,23 @@ function cotizarSeguro() {
     const cotizacionSolicitada = new SeguroInmueble(email, TipoDeInmueble, Ubicacion, mts2, costoM2)
     let cuota = cotizacionSolicitada.obtenerCotizacionInmueble()
     guardarInfoDeSegurosInmueblesEnLS(email, TipoDeInmueble, Ubicacion, mts2, costoM2, cuota)
-    location.href = "cotizadorHogar.html"
+    Swal.fire({
+        title: "COTIZACIÓN",
+        text: `La cuota estimada es de ${cuota}`,
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, lo quiero!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Felicitaciones!",
+            text: `Se enviará un email a ${email} para finalizar la operación`,
+            icon: "success"
+          });
+        }
+      });
 }
 
 // EVENTOS
@@ -97,6 +114,9 @@ btnCotizar.addEventListener("click", ()=> {
     }
 })
 
+btnInicio.addEventListener("click", ()=> {
+    localStorage.removeItem("informacionDelSeguroDeHogar")
+})
 
 // // CODIGO AUTOEJECUTABLE
 cargartipoDeInmuebleYUbicacion()
