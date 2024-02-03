@@ -9,10 +9,10 @@ let email = ""
 
 // FUNCION PARA RECUPERAR DATOS DE LS
 // MEDIANTE UN OBJETO LITERAL LLAMADO 'infoDelPrestamo' RECUPERAMOS LOS DATOS ALMACENADOS EN EL NAVEGADOR
-//
 function recuperarInfoDeLocalStorage() {
     const infoDelPrestamo = JSON.parse(localStorage.getItem("informacionDelPrestamo"))
     if (infoDelPrestamo !== "" && infoDelPrestamo !== null) {
+        
         spanMonto.textContent = "$ " + infoDelPrestamo.montoASolicitar.toLocaleString("es-AR")
         spanTasa.textContent = ((infoDelPrestamo.tipoDeInteres - 1) * 100).toFixed(2)
         spanCuotas.textContent = infoDelPrestamo.cantidadDeCuota

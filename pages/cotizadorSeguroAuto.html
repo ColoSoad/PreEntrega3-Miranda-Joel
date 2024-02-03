@@ -11,14 +11,14 @@
     <!-- Archivo local css Inicia -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Archivo local css Finaliza -->
-    <title>DETALLE - PRESTAMO</title>
+    <title>DETALLE - SEGURO VEHICULO</title>
     <!-- SweetAlert2 Incia -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- SweetAlert2 Finaliza -->
     <!-- Archivos locales js Inicia -->
-    <script src="../js/classPrestamo.js"></script>
-    <script defer src="../js/calculadorPrestamo.js"></script>
+    <script src="../js/classSeguroMueble.js"></script>
+    <script defer src="../js/cotizadorVehiculo.js"></script>
     <!-- Archivos locales js Finaliza -->
 </head>
 <body>
@@ -59,11 +59,19 @@
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <p class="textos" >Monto del crédito: <span class="label-montoCredito">------</span></p>
-            <p class="textos">Tasa de interés: <span class="label-tasaDeIntereses">--- </span> %</p>
-            <p class="textos">Cant. Cuotas: <span class="label-coutas">--</span> meses</p>
-            <p class="textos">Total a devolver: $ <span class="label-total">--------</span></p>
-            <p class="total textos">Valor cuota mensual: $ <span class="label-cuota">$ -------</span></p>
+            <p class="textos">DATOS DEL VEHÍCULO:</p>
+            <p class="textos" >Marca: <span class="label-marca">----</span></p>
+            <p class="textos">Modelo: <span class="label-modelo">----</span></p>
+            <p class="textos">Año: <span class="label-año">----</span></p>
+            <p class="textos">Tipo de vehículo: <span class="label-tipo">----</span></p>
+            <p class="total textos">Combustible: <span class="label-combustible">----</span></p>
+            <hr>
+            <p class="textos">INFORMACIÓN DEL SEGURO:</p>
+            <p class="total textos">Plan de cobertura:<span class="label-cobertura">----</span></p>
+            <p class="total textos">Prima asegurada: <span class="label-prima">----</span></p>
+            <hr>
+            <p class="textos">TOTAL:</p>
+            <p class="total textos">Cuota: $ <span class="label-cuota">----</span></p>
             <div class="btnCalcularYCotizar separador">
                 <button class="button-contratar button button-outline">CONTRATAR</button>
             </div>

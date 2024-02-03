@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Archivo local css Finaliza -->
     <title>SEGUROS AUTOMOVIL</title>
-    <!-- Archivos lovales js local Incia -->
-    <script src="../js/class.cotizador.js"></script>
-    <script src="../js/variables.js"></script>
-    <script defer src="../js/aplicacion.js"></script>
-    <!-- Archivos lovales js local Incia -->
+    <!-- SweetAlert2 Incia -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- SweetAlert2 Finaliza -->
+    <!-- Archivos locales js local Incia -->
+    <script src="../js/classSeguroMueble.js"></script>
+    <script defer src="../js/seguroAuto.js"></script>
+    <!-- Archivos locales js local Incia -->
 </head>
 <body>
     <header>
@@ -56,33 +59,44 @@
     </header>
     <div class="div-father">
         <div class="div-cotizador">
-            <label for="propiedad">Tipo de vehiculo</label>
-            <select id="propiedad">
+            <label class="prest" for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label class="prest" for="marca">Marca:</label>
+            <input type="marca" id="marca" required>
+            <label class="prest" for="modelo">Modelo:</label>
+            <input type="modelo" id="modelo" required>
+            <label class="prest" for="año">Año:</label>
+            <input type="año" id="año" required>
+            <label class="prest" for="valor">Valor a declarar:</label>
+            <input type="valor" id="valor" required>
+            <label for="tipo">Tipo de combustible</label>
+            <select id="combustible">
+                <option selected disabled>Seleccionar...</option>
+                <option>Gasolina</option>
+                <option>Diesel</option>
+                <option>Gnc</option>
+            </select>
+            <label for="tipo">Tipo de vehiculo</label>
+            <select id="tipoV">
                 <option selected disabled>Seleccionar...</option>
             </select>
-            <label for="ubicacion">Marca</label>
-            <select id="ubicacion">
+            <label for="tipo">Antiguedad</label>
+            <select id="tipoA">
                 <option selected disabled>Seleccionar...</option>
             </select>
-            <label for="ubicacion">Modelo</label>
-            <select id="ubicacion">
-                <option selected disabled>Seleccionar...</option>
-            </select>
-            <label for="ubicacion">Año</label>
-            <select id="ubicacion">
+            <label for="cobertura">Tipo de cobertura:</label>
+            <select id="tipoC">
                 <option selected disabled>Seleccionar...</option>
             </select>
             <div class="btnCalcularYCotizar center separador">
-                <button class="button button-outline">Cotizar</button>
+                <button class="btnCalcular button button-outline">Cotizar</button>
             </div>
         </div>
     </div>
     <footer>
         <div class="redes">
-            <!-- Iconos redes sociales inicia -->
             <p class="proy3">© 2024 TRUST-CREDITS</p>
             <p class="proy4">Todos los derechos reservados.</p>
-            <!-- Iconos redes sociales fin -->
         </div>
     </footer>
 </body>
