@@ -75,7 +75,7 @@ btnCalcular.addEventListener("click", ()=> {
         Swal.fire({
             title: "¡ERROR!",
             text: "Por Favor! Ingrese datos válidos",
-            icon: "error"
+            icon: "error",
         });
     }
 

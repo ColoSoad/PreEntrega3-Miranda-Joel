@@ -27,11 +27,11 @@ function recuperarInfoDeLocalStorage() {
 
 //EVENTOS
 btnContratar.addEventListener("click", ()=> {
-    // Swal.fire({
-    //     title: "FELICITACIONES!",
-    //     text: `Se enviará un email a ${email} para finalizar la operación`,
-    //     icon: "success"
-    // });
+    Swal.fire({
+        title: "FELICITACIONES!",
+        text: `Se enviará un email a ${email} para finalizar la operación`,
+        icon: "success"
+    });
     localStorage.removeItem("informacionDelPrestamo")
 })
 
