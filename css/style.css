@@ -6,6 +6,22 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
+    background-color: rgb(234, 227, 225) !important;
+}
+.subir {
+    height: 40px;
+    width: 40px;
+    color: #000;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+  
+.subir:hover {
+    color: rgb(100, 100, 198);
 }
 
 html {
@@ -13,13 +29,13 @@ html {
 }
 
 body{
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
 .logos{
     text-align: center;
     padding: 30px;
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
 .logoHogar{
@@ -32,8 +48,11 @@ body{
     height: 180px;
 }
 .navbar{
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;;
     text-align: center !important;
+}
+.nav-link:hover{
+    color: rgb(100, 100, 198)!important;
 }
 
 .textoNavbar{
@@ -49,7 +68,7 @@ body{
 
 html {
     min-height: 100%;
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
 .btnCalcularYCotizar {
@@ -58,7 +77,7 @@ html {
 
 h1 {
     font-weight: 400;
-    color: whitesmoke;
+    color: #262525;
 }
 
 label, .textos {
@@ -72,7 +91,7 @@ label, .textos {
 }
 
 a{
-    color: #fff;
+    color: #262525;
     font-weight: 600;
 }
 
@@ -88,42 +107,44 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
 .div-cotizador {
     width: 1200px;
-    background-color: whitesmoke;
+    background-color: rgb(234, 227, 225) !important;
     margin-left: 5%;
     margin-right: 5%;
     padding: 30px;
-    border-color: whitesmoke;
-    box-shadow: 26px 28px 15px -8px rgba(0,0,0,0.15);
+    border-color: rgb(73, 70, 70);
+    box-shadow: 26px 28px 15px -4px rgba(0,0,0,0.15);
     border-radius: 0.7rem;
 }
 
 select, input, option {
     min-width: 50% !important;
     width: 70% !important;
-    border-color: orangered !important;
+    border-color: rgb(73, 70, 70) !important;
+    box-shadow: 26px 28px 15px -16px rgba(0,0,0,0.15) !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
 .separador {
     margin: 20px;
 }
 
-.importe {
+/* .importe {
     color: orangered;
     font-size: x-large;
     font-weight: 700;
-}
+} */
 
 .button-outline{
-    color: orangered !important;
-    border-color: orangered !important;
+    color : rgb(100, 100, 198);
+    border-color: rgb(100, 100, 198);
 }
 
-.guardar {
+/* .guardar {
     border: 1px transparent;
     border-radius: 4px;
     padding-left: 10px;
@@ -131,35 +152,30 @@ select, input, option {
     margin-left: 20px;
     font-size: 4rem;
     cursor: pointer;
-}
+} */
 
-.ocultar {
+/* .ocultar {
     visibility: hidden;
-}
+} */
 
 button:hover {
     color: whitesmoke !important;
-    background-color: orangered !important;
+    background-color: rgb(100, 100, 198) !important;
 }
 
 main, footer, .banner, .dropdown-menu{
-    background-color: orangered !important;
+    background-color: rgb(234, 227, 225) !important;
 }
 
-.carrito-logo{
-    height: 40px;
-}
 
 footer {
     text-align: center;
-    color: #fff;
+    color: #262525;
     padding: 30px;
 }
   
-.redes a {
-    color: #fff;
-    font-size: 30px;
-    letter-spacing: 15px;
+.redes {
+    color: #262525;
 }
 
 .banner{
@@ -177,7 +193,7 @@ footer {
 
 .slogan{
     font-size: 16px;
-    color: #fff;
+    color : rgb(100, 100, 198);
     font-weight: 400;
 }
 
@@ -231,18 +247,16 @@ footer {
 
 .prestamosYseguros{
     text-align: center;
-    padding: 20px;
+    padding: 0px;
 }
 
 .prestamosYseguros:hover{
     color: rgb(100, 100, 198);
 }
 
-/* /* ----------------------------------------------------------------------------------------------------------------------------------- */
-
 .panel-desgloce {
     padding: 20px;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgb(100, 100, 198);
     box-shadow: 4px 2px 20px lightgray;
     max-width: 480px;
     margin: 0 auto;
@@ -258,8 +272,6 @@ label {
     text-align: center;
     padding-top: 80px;
 }
-
-
 
 .panel-cotizacion {
     padding: 20px;
@@ -282,13 +294,6 @@ button{
     border-radius: 5px;
 }
 
-
-
-
-
-
-/* ----------------------------------------------------------------------------------------------------------------------------------- */
-
 @media only screen and (min-width: 770px) and (max-width: 1025px) {
     .contenedor-div-padre{
         display: grid;
@@ -308,6 +313,9 @@ button{
     
     .barra-navegacion{
         font-size: x-large;
+    }
+    .navbar-light{
+        padding: 50px;
     }
 
     .contenedor-div-padre{
