@@ -16,8 +16,8 @@ const tipoVehiculo = [{ tipo: 'Compacto', factorTipo: .5 },
                       { tipo: 'Suv', factorTipo: 1.5 },
                       { tipo: 'Utilitario', factorTipo: 2 }]
 
-const PlanCobertura = [{ tipo2: '(C) - Responsabilidad Civil', sumador: 100000 },
-                       { tipo2: '(C+) - C + Robo, hurto, incendio total y parcial', sumador: 120000 },
+const PlanCobertura = [{ tipo2: '(C) - Responsabilidad Civil + Robo', sumador: 100000 },
+                       { tipo2: '(C+) - C + Hurto, incendio total y parcial', sumador: 120000 },
                        { tipo2: '(C-Full) - (C+) + Granizo e inundaciones', sumador: 160000 },
                        { tipo2: '(C-Full++) - (C-FULL) + Franquicia', sumador: 200000 }]
 
