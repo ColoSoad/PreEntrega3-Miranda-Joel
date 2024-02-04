@@ -8,6 +8,29 @@
     font-family: 'AgencyFB', 'Courier New', Courier, monospace;
 }
 
+
+select {
+    background: none !important;
+}
+
+select:focus {
+    color: #000 !important;
+    border-color: #000 !important;
+    outline: 0;
+}
+
+select {
+    background-color: transparent;
+    border: 0.1rem solid #d1d1d1;
+    border-radius: .4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    height: 3.8rem;
+    padding: .6rem 1.0rem .7rem;
+    width: 100%;
+    color: #000 !important;
+}
+
 .grad{
     background-color: #2A3A47 !important;
 }
@@ -138,7 +161,7 @@ select, input, option {
 }
 
 .button-outline{
-    color : rgb(100, 100, 198);
+    color : rgb(100, 100, 198) !important;
     border-color: rgb(100, 100, 198);
 }
 
